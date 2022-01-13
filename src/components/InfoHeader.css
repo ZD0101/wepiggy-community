@@ -1,0 +1,35 @@
+.InfoHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.GasInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #F5F6F8;
+    color: #292929;
+}
+
+.ConnectButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #FF4C94;
+    margin-right: 10px;
+}
+
+.ConnectButton h4 {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}

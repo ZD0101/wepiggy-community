@@ -1,0 +1,16 @@
+.RoundButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #FF4C94;
+    color: white;
+    margin-right: 10px;
+}
+
+.RoundButton:hover {
+    background-color: #ff6aa6;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.Aidrops {
+    display: flex;
+    flex-direction: column;
+    /*background-color: #FAE4E3;*/
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.AidropPools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

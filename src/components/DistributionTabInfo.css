@@ -1,0 +1,21 @@
+.DistributionTabInfo {
+    width: 100%;
+    height: 100px;
+    background-color: #FDF1EE;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.DistributionTabInfoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+
+}
+
+.DistributionTabInfoText p{
+    color: #C2866C;
+}

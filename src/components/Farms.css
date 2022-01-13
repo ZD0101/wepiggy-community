@@ -1,0 +1,27 @@
+.Farms {
+    /*background-color: #FAE4E3;*/
+    background-color: white;
+    /*margin-left: 340px;*/
+    height: 100vh;
+}
+
+.TokensContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.Tokens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .Farms {
+        margin-left: 120px;
+    }
+}
