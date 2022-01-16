@@ -4,7 +4,6 @@ import "./CoinsGrid.css"
 
 function CoinsGrid(props) {
 
-
     let coins = [
         {
             image: "https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG-File.png",
@@ -90,10 +89,19 @@ function CoinsGrid(props) {
         }
     ]
 
-
     return (
-        <div className="CoinsGrid">
-            {coins.map(c => <Coin key={c.name} coin={c}/>)}
+        // <div className="CoinsGrid">
+        //     {coins.map(c => <Coin key={c.name} coin={c}/>)}
+        // </div>
+        <div className="CoinsList">
+
+                {/*<CoinFilters/>*/}
+                {coins.map(c =>
+                    <Coin key={c.name}
+                          coin={c}
+                    />
+                )}
+
         </div>
     );
 }

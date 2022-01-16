@@ -1,15 +1,8 @@
-import React, {useContext, useEffect, useState} from 'react';
-import CirculationInfoTab from "./CirculationInfoTab";
-import "./Farms.css"
-import {GlobalContext} from "./GlobalContext";
-import CoinListMobile from "./CoinListMobile";
-import TokensList from "./TokensList";
+import React from 'react';
+import "./TokensList.css"
+import Token from "./Token";
 
-
-
-function Farms(props) {
-
-    const state = useContext(GlobalContext)
+function TokensList(props) {
 
     let tokens = [
         {
@@ -51,22 +44,11 @@ function Farms(props) {
     ]
 
     return (
-        <div>
-            {
-                state.connected ?
-                    <div className="Farms">
-                        <CirculationInfoTab/>
-                        <div className="TokensContent">
-                            {/*<TokenFilters/>*/}
-                            <div className="Tokens">
-                                <TokensList/>
-                            </div>
-                        </div>
-                    </div>
-                    : <div style={{display: "flex", justifyContent: "center"}}><h1>Connect Wallet!</h1></div>}
+        <div className="TokensList">
+            {tokens.map(t => <Token key={t.name} image={t.image} name={t.name} stake={t.stake}
+                                    tvl={t.tvl}/>)}
         </div>
-
     );
 }
 
-export default Farms;
+export default TokensList;

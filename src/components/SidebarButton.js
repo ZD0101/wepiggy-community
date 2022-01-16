@@ -3,7 +3,7 @@ import "./SidebarButton.css"
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import {NavLink} from "react-router-dom";
 
-function SidebarButton({title, link}) {
+function SidebarButton({title, link, icon}) {
     return (
 
         <NavLink
@@ -12,7 +12,7 @@ function SidebarButton({title, link}) {
         >
             <div className="SidebarButton">
                 <div className="SidebarButtonContent">
-                    <AccountBalanceWalletIcon />
+                    {icon}
                     <p className="SidebarButtonLink">{title}</p>
                 </div>
             </div>

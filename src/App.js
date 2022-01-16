@@ -8,6 +8,8 @@ import InfoHeader from "./components/InfoHeader";
 import ErrorPage from "./components/ErrorPage";
 import {GlobalContext} from "./components/GlobalContext";
 import {useContext, useEffect, useState} from "react";
+import Footer from "./components/Footer";
+import {useLocation} from "react-router";
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -69,6 +71,7 @@ function App() {
                             <Route path="/dashboard" element={<Dashboard/>}/>
                             <Route path="*" element={<ErrorPage/>}/>
                         </Routes>
+                    {connected && <Footer/>}
                     </div>
                 </div>
             </GlobalContext.Provider>

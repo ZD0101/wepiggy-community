@@ -171,9 +171,17 @@ span {
     margin-left: 16px;
 }
 
+.BlockInfo {
+    color: white;
+    margin-top: 300px;
+}
+
 @media only screen and (max-width: 900px) {
     .nav-menu {
         left: -100%;
+    }
+    .BlockInfo {
+        display: none;
     }
 
 }

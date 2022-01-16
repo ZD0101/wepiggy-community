@@ -5,7 +5,7 @@ import RoundButton from "./RoundButton";
 function Token({image, name, stake, tvl}) {
     return (
         <div className="Token">
-            <div className="Name">
+            <div className="TokenName">
                 <img className="Image" src={image} alt=""/>
                 <h1>{name}</h1>
             </div>

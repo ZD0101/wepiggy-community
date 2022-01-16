@@ -9,14 +9,13 @@ function CirculationInfoTab(props) {
                 <h3>SOD Current circulation</h3>
                 <h2>2,847,732,798,2073</h2>
             </div>
-
             <div className="RightInfo">
-                <div className="RightInfoInner">
+                <div className="LeftInfo">
                     <h3>Pending claim SOD</h3>
-                    <h3 style={{color: "#FF4C94"}}>0</h3>
+                    <h2 style={{color: "#FF4C94"}}>0</h2>
                 </div>
                 <div className="RightInfoInnerTwo">
-                    <RoundButton title="Claim"/>
+                    <RoundButton title="Claim" width="60"/>
                 </div>
             </div>
         </div>

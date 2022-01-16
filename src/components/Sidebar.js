@@ -3,14 +3,20 @@ import "./Sidebar.css"
 import SidebarButton from "./SidebarButton";
 import {GlobalContext} from "./GlobalContext";
 import {NavLink} from "react-router-dom";
-import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import InfoHeader from "./InfoHeader";
 import MenuIcon from '@mui/icons-material/Menu';
+import PieChartIcon from '@mui/icons-material/PieChart';
+import ForumIcon from '@mui/icons-material/Forum';
+import {RiCoinsFill, RiExchangeFill} from "react-icons/ri";
+
+import WhereToVoteIcon from '@mui/icons-material/WhereToVote';
+import {BiCoinStack} from "react-icons/bi";
+import {FaGift} from "react-icons/fa";
 
 export const Sidebar = () => {
     const connected = useContext(GlobalContext)
 
-    const { sidebar, setSidebar } = useContext(GlobalContext)
+    const {sidebar, setSidebar} = useContext(GlobalContext)
 
     // useEffect(() => {
     //     console.log(connected)
@@ -20,12 +26,7 @@ export const Sidebar = () => {
         {
             title: "Lending Protocol",
             link: "/link-to-app",
-            icon: <AccountBalanceWalletIcon/>
-        },
-        {
-            title: "Cross-Chain Bridge",
-            link: "/",
-            icon: <AccountBalanceWalletIcon/>
+            icon: <BiCoinStack size={25}/>
         },
     ]
 
@@ -45,16 +46,16 @@ export const Sidebar = () => {
                             <MenuIcon color="white"/>
                         </NavLink>
                     </li>
-                    <SidebarButton title="Airdrop Pools" link="/airdrops"/>
-                    <SidebarButton title="pToken Pools" link="/farms"/>
-                    <SidebarButton title="WPC Distribution" link="/dashboard"/>
-                    <SidebarButton title="Providing Liquidity" link="https://app.uniswap.org/#/swap"/>
-                    <SidebarButton title="Voting" link="/"/>
-                    <SidebarButton title="Forum" link="/"/>
-                    <SidebarButton title="Lending Protocol" link="/link-to-app"/>
-                    <SidebarButton title="Cross-Chain Bridge" link="/"/>
+                    <SidebarButton title="Airdrop Pools" link="/airdrops" icon={<FaGift size={25}/>}/>
+                    <SidebarButton title="pToken Pools" link="/farms" icon={<RiCoinsFill size={25}/>}/>
+                    <SidebarButton title="WPC Distribution" link="/dashboard" icon={<PieChartIcon/>}/>
+                    <SidebarButton title="Providing Liquidity" link="https://app.uniswap.org/#/swap"
+                                   icon={<RiExchangeFill size={25}/>}/>
+                    <SidebarButton title="Voting" link="/" icon={<WhereToVoteIcon/>}/>
+                    <SidebarButton title="Forum" link="/" icon={<ForumIcon/>}/>
 
-                    <div style={{ marginTop: 50,borderBottom: "1px solid gray"}}>
+
+                    <div style={{marginTop: 50, borderBottom: "1px solid gray"}}>
 
                     </div>
                     <div style={{marginTop: 50}}>
@@ -63,10 +64,14 @@ export const Sidebar = () => {
                                 <NavLink
                                     to={item.link}
                                     className={({isActive}) => (isActive ? 'is-active link' : 'link')}
-                                ><SidebarButton title={item.title} link={item.link}/></NavLink>
+                                ><SidebarButton title={item.title} link={item.link} icon={item.icon}/></NavLink>
                             )
                         })
                         }
+                    </div>
+                    <div className="BlockInfo">
+                        <p>Current block 13972042</p>
+                        <p>SOD: $0.02 </p>
                     </div>
                 </ul>
             </nav>
@@ -83,10 +88,7 @@ export const Sidebar = () => {
         //         <SidebarButton title="Lending Protocol" link="/link-to-app"/>
         //         <SidebarButton title="Cross-Chain Bridge" link="/"/>
         //     </div>
-        //     <div className="BlockInfo">
-        //         <p>Current block 13972042</p>
-        //         <p>SOD: $0.02 </p>
-        //     </div>
+        //
         // </div>
     )
 }

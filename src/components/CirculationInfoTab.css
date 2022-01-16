@@ -1,6 +1,6 @@
 .CirculationInfoTab {
     width: 1000px;
-    height: 136px;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -9,11 +9,15 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
+.LeftInfo h3{
+    font-weight: 500;
+}
 
 .RightInfo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .RightInfoInner {
@@ -22,10 +26,35 @@
     align-items: center;
 }
 
+.RightInfoInner h2 {
+    margin: 0;
+}
+
+.RightInfoInner h3 {
+    font-weight: 500;
+}
+
 .RightInfoInnerTwo {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-bottom: 20px;
+    margin-left: 50px;
 }
+
+@media only screen and (max-width: 720px) {
+    .CirculationInfoTab {
+        width: 320px;
+    }
+
+    .RightInfo {
+        width: 320px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+

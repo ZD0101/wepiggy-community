@@ -48,6 +48,10 @@
     margin-left: 0;
 }
 
+.InfoText h3 {
+    margin-top: 10px;
+}
+
 .InfoTextRow {
     display: flex;
     justify-content: center;
@@ -64,5 +68,8 @@
         margin-left: 40px;
     }
 
+    .DistributionInfoRight {
+        width: 450px;
+    }
 }
 

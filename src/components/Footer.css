@@ -1,0 +1,16 @@
+.Footer {
+    height: 60px;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.FooterIcons {
+    display: flex;
+}
+
+.MediaIcon {
+    color: gray;
+    margin-left: 20px;
+}

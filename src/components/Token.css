@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.TokenName {
+    color: black;
+}
+
 .Image {
     width: 100px;
 }
