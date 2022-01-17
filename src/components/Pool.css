@@ -2,10 +2,9 @@
     height: 360px;
     width: 310px;
     border-radius: 30px;
-
+    margin: 25px;
     display: inline-block;
     position: relative;
-
 }
 
 .picture {
@@ -19,4 +18,10 @@
     bottom: 50px;
     left: 20%;
 
+}
+
+@media only screen and (max-width: 900px) {
+    .Pool {
+        margin: 0;
+    }
 }

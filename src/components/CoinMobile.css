@@ -1,3 +1,53 @@
 .CoinMobile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #F7F8FB;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.CoinMobile:hover {
+    box-shadow: 2px 2px #d7d7d7;
+    cursor: pointer;
+}
+
+.CoinMobileInfo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.CoinMobileInfoImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.CoinMobileInfoName {
+    display: flex;
+    align-items: center;
+}
+
+.CoinMobileInfo h3 {
+    margin-right: 20px;
+}
+
+.CoinMobileProps {
+    display: flex;
+    justify-content: space-around;
 
 }
+
+.CoinMobilePropName {
+    color: #919191;
+    font-weight: 500;
+}
+
+.CoinMobilePropValue {
+    color: black;
+    font-weight: 600;
+}
+

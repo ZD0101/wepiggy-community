@@ -1,14 +1,22 @@
-.Aidrops {
+.AidropsRoot {
+    width: 100%;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.Aidrops {
     /*background-color: #FAE4E3;*/
     background-color: white;
     flex-wrap: wrap;
-    height: 650px;
 }
 
 .AidropPools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 900px) {
 }

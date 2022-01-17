@@ -8,10 +8,12 @@ function Airdrops(props) {
     const state = useContext(GlobalContext)
 
     return (
-        <div>
+        <div className="AidropsRoot">
             {state.connected ?
                 <div className="Aidrops">
-                    <h1>Aidrop Pools</h1>
+                    <div>
+                <h1>Aidrop Pools</h1>
+                    </div>
                     <div className="AidropPools">
                         <Pool image="https://prod.wepiggy.fortop.site/airdropPool/title/en-US/2.png"
                               title="Ecological Partner Pool"/>

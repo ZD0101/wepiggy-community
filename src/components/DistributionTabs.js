@@ -146,7 +146,6 @@ function DistributionTabs(props) {
                     </TabPanel>
                 </SwipeableViews>
             </Box>
-                <Footer/>
         </div>
     );
 }

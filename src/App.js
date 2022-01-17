@@ -65,12 +65,12 @@ function App() {
                     <Sidebar/>
                     <div className="AppContent">
                         {/*<InfoHeader/>*/}
-                        <Routes>
-                            <Route path="/airdrops" element={<Airdrops/>}/>
-                            <Route exact path="/farms" element={<Farms/>}/>
-                            <Route path="/dashboard" element={<Dashboard/>}/>
-                            <Route path="*" element={<ErrorPage/>}/>
-                        </Routes>
+                            <Routes>
+                                <Route path="/airdrops" element={<Airdrops/>}/>
+                                <Route exact path="/farms" element={<Farms/>}/>
+                                <Route path="/dashboard" element={<Dashboard/>}/>
+                                <Route path="*" element={<ErrorPage/>}/>
+                            </Routes>
                     {connected && <Footer/>}
                     </div>
                 </div>

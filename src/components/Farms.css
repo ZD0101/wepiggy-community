@@ -2,7 +2,6 @@
     /*background-color: #FAE4E3;*/
     background-color: white;
     /*margin-left: 340px;*/
-    height: 100vh;
 }
 
 .TokensContent {
@@ -22,6 +21,6 @@
 
 @media only screen and (max-width: 1250px) {
     .Farms {
-        margin-left: 120px;
+        margin-left: 100px;
     }
 }

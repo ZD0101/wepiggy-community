@@ -15,20 +15,20 @@ function CoinMobile({image, name, ticker, depositMarket, depositTotalAPY, borrow
             </div>
             <div className="CoinMobileProps">
                 <div>
-                    <p>Deposit Market</p>
-                    <p>{depositMarket}</p>
+                    <p className="CoinMobilePropName">Deposit Market</p>
+                    <p className="CoinMobilePropValue">{depositMarket}</p>
                 </div>
                 <div>
-                    <p>Deposit Total APY%</p>
-                    <p>{depositTotalAPY}</p>
+                    <p className="CoinMobilePropName">Deposit Total APY%</p>
+                    <p className="CoinMobilePropValue">{depositTotalAPY}</p>
                 </div>
                 <div>
-                    <p>Borrow Market</p>
-                    <p>{borrowMarket}</p>
+                    <p className="CoinMobilePropName">Borrow Market</p>
+                    <p className="CoinMobilePropValue">{borrowMarket}</p>
                 </div>
                 <div>
-                    <p>Borrow Total APY</p>
-                    <p>{borrowTotalAPY}</p>
+                    <p className="CoinMobilePropName">Borrow Total APY</p>
+                    <p className="CoinMobilePropValue">{borrowTotalAPY}</p>
                 </div>
 
             </div>

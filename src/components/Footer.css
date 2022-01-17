@@ -1,16 +1,68 @@
 .Footer {
-    height: 60px;
     display: flex;
-    width: 1200px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 50px;
+    align-content: flex-start;
+    background-color: white;
+    height: 120px;
+    margin-top: 150px;
+}
+
+.FooterTitle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.FooterTitle h2 {
+    font-size: 16px;
+}
+
+.FooterContent {
+    color: #8420D2;
+    display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.FooterIcons {
+.FooterLinks {
+    flex: 0.5;
     display: flex;
 }
 
-.MediaIcon {
-    color: gray;
-    margin-left: 20px;
+.FooterLink h3{
+    font-size: 16px;
+}
+
+.FooterLinks:hover {
+    cursor: pointer;
+}
+
+.FooterMediaLinks {
+    display: flex;
+    margin-right: 50px;
+}
+
+.MediaLink {
+    margin-right: 20px;
+}
+
+.MediaLink:hover {
+    cursor: pointer;
+}
+
+.FooterLink {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .FooterContent {
+        flex-direction: column;
+    }
+
+    .FooterTitle {
+        font-size: 15px;
+        text-align: left;
+    }
 }
